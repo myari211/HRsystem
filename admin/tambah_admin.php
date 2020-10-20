@@ -1,13 +1,8 @@
-<?php
-
-    require('includes/conn.php');
-
-?>
 <html>
     <head>
     </head>
     <body>
-        <form method="post" action="">
+        <form method="post" action="add_admin.php">
             <label>Name</label>
             <input type="name" name="name">
             <br />
@@ -16,25 +11,6 @@
             <br />
             <button type="submit">Save</button>
         </form>
-
-        <?php
-        
-            $username = $_POST['name'];
-            $password =md5($_POST['password']);
-            $firstname = "admin";
-            $lastname = "meida";
-
-            $query = "INSERT INTO admin (id, username, password, firstname, lastname) VALUES ('', '.$name.', '.$password.', '.$firstname.', '.$lastname.')";
-            $sql = mysqli_query($conn, $query);
-
-            if(!$conn){
-                echo "Gagal";
-            }
-            else
-            {
-                echo "Berhasil";
-            }
-        ?>
     </body>
 
 </html>
