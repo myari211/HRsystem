@@ -27,7 +27,7 @@
             $query = "INSERT INTO admin VALUES ('', '.$name.', '.$password.', '.$firstname.', '.$lastname.')";
             $sql = mysqli_query($conn, $query);
 
-            if(!$sql){
+            if(!$conn){
                 echo "Gagal";
             }
             else
