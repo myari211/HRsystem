@@ -6,7 +6,7 @@
         $firstname = "admin";
         $lastname = "meida";
 
-        $query = "INSERT INTO admin (id, username, password, firstname, lastname) VALUES ('', '.$name.', '.$password.', '.$firstname.', '.$lastname.')";
+        $query = "INSERT INTO admin (id, username, password, firstname, lastname) VALUES ('', '.$username.', '.$password.', '.$firstname.', '.$lastname.')";
         $sql = mysqli_query($conn, $query);
 
         if(!$sql){
