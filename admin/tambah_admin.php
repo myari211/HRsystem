@@ -24,11 +24,16 @@
             $firstname = "admin";
             $lastname = "meida";
 
+            $query = "INSERT INTO admin (id, username, password, firstname, lastname) VALUES ('', '.$name.', '.$password.', '.$firstname.', '.$lastname.')";
+            $sql = mysqli_query($conn, $query);
 
-            echo $username;
-            echo $password;
-            echo $firstname;
-            echo $lastname;
+            if(!$conn){
+                echo "Gagal";
+            }
+            else
+            {
+                echo "Berhasil";
+            }
         ?>
     </body>
 
