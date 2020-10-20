@@ -13,6 +13,8 @@
             <br />
             <label>password</label>
             <input type="password" name="password">
+            <br />
+            <button type="submit">Save</button>
         </form>
 
         <?php
